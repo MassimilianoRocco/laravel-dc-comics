@@ -1,0 +1,33 @@
+img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .container{
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 700px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: black 0 0 5px 5px ;
+    background-color: rgba(185, 170, 170, 0.7);
+  }
+  .info_container{
+    display: flex;
+    height: 500px;
+  }
+  .description_box{
+    height: 500px;
+    overflow: auto;
+  }
+  
+  h1{
+    color: white;
+    margin-bottom: 1rem;
+  }
+  p{
+    max-width: 300px;
+    margin-left: 1rem;
+    color: white
+  }

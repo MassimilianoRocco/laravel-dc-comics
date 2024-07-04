@@ -2,8 +2,7 @@
 
 
 @section("style&js")
-    @vite('resources/scss/home.scss')
-    <link rel="stylesheet" href="/home.css">
+    @vite('resources/scss/index.scss')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -11,7 +10,7 @@
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 @endsection
 
-@section("title", "Home")
+@section("title", "Comics List")
 
 @section("content")
     <div class="container">
@@ -41,20 +40,5 @@
 
 
 @section("pageScript")
-  <script type="text/javascript">
-    const emblaNode = document.querySelector('.embla')
-    const options = { loop: false }
-    const emblaApi = EmblaCarousel(emblaNode, options)
-
-    const viewportNode = emblaNode.querySelector('.embla__viewport')
-
-    // Grab button nodes
-    const prevButtonNode = emblaNode.querySelector('.embla__prev')
-    const nextButtonNode = emblaNode.querySelector('.embla__next')
-
-    const embla = EmblaCarousel(viewportNode)
-    prevButtonNode.addEventListener('click', embla.scrollPrev, false)
-    nextButtonNode.addEventListener('click', embla.scrollNext, false)
-  </script>
-
+    <script src= @vite('resources/js/index.js')
 @endsection
