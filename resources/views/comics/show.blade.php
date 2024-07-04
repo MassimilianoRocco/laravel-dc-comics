@@ -2,6 +2,6 @@
 
 @section('title', "SingleComic Name")
 @section('content')
-    <h1>Comic Home</h1>
+    <h1>{{$comic->title}}</h1>
 
 @endsection

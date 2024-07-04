@@ -1,0 +1,61 @@
+
+h1{
+    margin-left: 1rem;
+    color: white;
+}
+
+img{
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.container{
+  padding: 1rem;
+}
+
+.embla {
+  overflow: hidden;
+  width: 400px;
+  color:black;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: black 0 0 5px 5px ;
+  background-color: rgba(185, 170, 170, 0.7);
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+}
+
+.text_box{
+  padding: 0.5rem;
+  p{
+    font-size: 1.2rem;
+  }
+  a{
+    font-size: 0.9rem;
+  }
+}
+
+.buttons_box{
+  padding: 0.2rem 0.5rem;
+}
+button{
+  cursor: pointer;
+  background-color: #EF6F31;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+button:hover{
+  background-color: #6AC5F1;
+}
+
+.active{
+  border-bottom: 2px solid #EF6F31;
+}

@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield("title", "Hello Laravel World")</title>
     @vite('resources/js/app.js')
+    @yield('style&js')
 </head>
 <body>
 
     @include('partials.header')
     
     @yield("content")
+
+
+    @yield("pageScript")
 
 </body>
 </html>
