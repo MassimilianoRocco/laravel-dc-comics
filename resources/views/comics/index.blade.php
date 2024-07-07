@@ -21,7 +21,8 @@
                         <div class="embla__slide">
                             <div class="text_box">
                                 <p>{{ $comic["title"] }}</p>
-                                <a href="{{ route('comics.show', $comic->id) }}" >Vai ai dettagli</a>
+                                <a href="{{ route('comics.show', $comic->id) }}" >details</a>
+                                <a href="{{ route('comics.edit', $comic) }}" >update</a>
                             </div>
                             <div class="thumb_box">
                                 <img src= {{$comic["thumb"]}} >
