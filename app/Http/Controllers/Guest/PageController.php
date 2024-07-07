@@ -16,7 +16,7 @@ class PageController extends Controller
         return view('about');
     }
 
-    public function form() {
-        return view('form');
-    }
+    // public function form() {
+    //     return view('form');
+    // }
 }
