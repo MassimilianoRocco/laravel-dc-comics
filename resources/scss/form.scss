@@ -7,7 +7,7 @@
     padding: 1rem; 
     border: 1px solid white;
     border-radius: 10px;
-    box-shadow: rgb(231, 152, 32) 0 0 2px 2px ;
+    box-shadow:#5cb85c 0 0 2px 2px ;
     background-color: #1c2841;
 }
 h2{
@@ -53,11 +53,11 @@ label{
 
 .custom_input:focus{
     color: white;
-    border: 2px solid rgb(231, 152, 32);
+    border: 2px solid #5cb85c;
 }
 .custom_input:focus + .form_label,
 .custom_input:valid + .form_label{
-    color: rgb(231, 152, 32);
+    color: #5cb85c;
     top: 30px;
     transform: translate(-10px, -30px) scale(0.75);
     z-index: 999;
@@ -67,12 +67,14 @@ label{
     border: 1px solid #1c2841;
     padding: 4px 10px;
     border-radius: 8px;
-    color: #1c2841;
-    
-    transition: all 0.3s ease-in-out;
+    color: white;
+    background-color: #5cb85c;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .custom_submit:hover{
-    background-color: rgb(231, 152, 32);
+    transform: scale(1.1);
     color: white;
 }

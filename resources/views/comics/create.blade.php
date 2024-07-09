@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="form_box">
-                    <input type="number" id="price" name="price" class="custom_input" required>
+                    <input type="number" step="0.01" id="price" name="price" class="custom_input" required>
                     <div class="form_label">Add a price:</div>
                 </div>
 

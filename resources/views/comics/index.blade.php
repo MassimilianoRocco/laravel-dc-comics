@@ -23,6 +23,14 @@
                                 <p>{{ $comic["title"] }}</p>
                                 <a href="{{ route('comics.show', $comic->id) }}" >details</a>
                                 <a href="{{ route('comics.edit', $comic) }}" >update</a>
+                                {{-- <a href="{{ route('comics.destroy', $comic) }}" >delete</a>  --}}
+                                {{-- Così richiama il metodo GET quindi mi porterà allo show e non delete. Devo per forza creare un form --}}
+
+                                <form class="delete_form" action="{{route('comics.destroy', $comic)}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="delete_button">delete</button>
+                                </form>
                             </div>
                             <div class="thumb_box">
                                 <img src= {{$comic["thumb"]}} >

@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Comic extends Model
 {
     use HasFactory;
+
+    //PER POTER USARE IL FILL NEL CONTROLLER
+    protected $fillable = [
+        'title',
+        'description',
+        'thumb',
+        'price',
+    ];
 }

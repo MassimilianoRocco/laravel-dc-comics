@@ -4,7 +4,7 @@
     @vite('resources/scss/form.scss')
 @endsection
 
-@section('title', "Comic Form")
+@section('title', "Comic Update Form")
 
 
 
@@ -12,7 +12,9 @@
     <div class="container">
         <div class="form_container">
             <h2>Update {{$comic->title}} Form</h2>
-            <form>
+            <form action="{{route('comics.update', $comic->id)}}" method="POST">
+                @method('PATCH')
+                @csrf
 
                 <div class="form_box">
                     <input type="text" id="title" name="title" class="custom_input" value="{{$comic->title}}" required>
